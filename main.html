@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <title>ArtFlow - Feed</title>
+  </head>
+  <body>
+    <!-- Top Navigation -->
+    <nav class="top-nav">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <i class="fas fa-palette"></i>
+          <span>ArtFlow</span>
+        </div>
+        <div class="nav-actions">
+          <button class="btn btn-notification">
+            <i class="fas fa-bell"></i>
+          </button>
+          <button class="btn btn-messages">
+            <i class="fas fa-envelope"></i>
+          </button>
+          <div class="user-avatar">
+            <img
+              src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=40&h=40&fit=crop&crop=face"
+              alt="User Avatar"
+            />
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+      <!-- Feed Section -->
+      <section class="feed-section" id="feed-section">
+        <div class="feed-container">
+          <!-- Story/Highlights Row -->
+          <div class="stories-row">
+            <div class="story-item add-story">
+              <div class="story-avatar">
+                <i class="fas fa-plus"></i>
+              </div>
+              <span>Add Story</span>
+            </div>
+            <div class="story-item">
+              <div class="story-avatar">
+                <img
+                  src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=60&h=60&fit=crop&crop=face"
+                  alt="User"
+                />
+              </div>
+              <span>Sarah</span>
+            </div>
+            <div class="story-item">
+              <div class="story-avatar">
+                <img
+                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=60&h=60&fit=crop&crop=face"
+                  alt="User"
+                />
+              </div>
+              <span>Mike</span>
+            </div>
+            <div class="story-item">
+              <div class="story-avatar">
+                <img
+                  src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=60&h=60&fit=crop&crop=face"
+                  alt="User"
+                />
+              </div>
+              <span>Emma</span>
+            </div>
+            <div class="story-item">
+              <div class="story-avatar">
+                <img
+                  src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=60&h=60&fit=crop&crop=face"
+                  alt="User"
+                />
+              </div>
+              <span>Alex</span>
+            </div>
+          </div>
+
+          <!-- Feed Posts -->
+          <div class="feed-posts">
+            <!-- Post 1 -->
+            <article class="post">
+              <div class="post-header">
+                <div class="post-user">
+                  <img
+                    src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=40&h=40&fit=crop&crop=face"
+                    alt="User"
+                    class="user-avatar-small"
+                  />
+                  <div class="user-info">
+                    <h4>Sarah Chen</h4>
+                    <span class="post-time">2 hours ago</span>
+                  </div>
+                </div>
+                <button class="btn btn-more">
+                  <i class="fas fa-ellipsis-h"></i>
+                </button>
+              </div>
+              <div class="post-content">
+                <p class="post-caption">
+                  Just finished this digital painting! The sunset colors were so
+                  inspiring today 🌅 #digitalart #sunset #creativity
+                </p>
+                <div class="post-media">
+                  <img
+                    src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=400&fit=crop"
+                    alt="Digital Art"
+                  />
+                </div>
+              </div>
+              <div class="post-actions">
+                <button class="btn btn-like">
+                  <i class="fas fa-heart"></i>
+                  <span>1.2k</span>
+                </button>
+                <button class="btn btn-comment">
+                  <i class="fas fa-comment"></i>
+                  <span>89</span>
+                </button>
+                <button class="btn btn-share">
+                  <i class="fas fa-share"></i>
+                  <span>Share</span>
+                </button>
+                <button class="btn btn-save">
+                  <i class="fas fa-bookmark"></i>
+                </button>
+              </div>
+            </article>
+
+            <!-- Post 2 -->
+            <article class="post">
+              <div class="post-header">
+                <div class="post-user">
+                  <img
+                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=40&h=40&fit=crop&crop=face"
+                    alt="User"
+                    class="user-avatar-small"
+                  />
+                  <div class="user-info">
+                    <h4>Mike Rodriguez</h4>
+                    <span class="post-time">5 hours ago</span>
+                  </div>
+                </div>
+                <button class="btn btn-more">
+                  <i class="fas fa-ellipsis-h"></i>
+                </button>
+              </div>
+              <div class="post-content">
+                <p class="post-caption">
+                  New photography series: Urban Architecture 📸 Exploring the
+                  geometric patterns in city life #photography #architecture
+                  #urban
+                </p>
+                <div class="post-media">
+                  <img
+                    src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&h=400&fit=crop"
+                    alt="Photography"
+                  />
+                </div>
+              </div>
+              <div class="post-actions">
+                <button class="btn btn-like">
+                  <i class="fas fa-heart"></i>
+                  <span>856</span>
+                </button>
+                <button class="btn btn-comment">
+                  <i class="fas fa-comment"></i>
+                  <span>67</span>
+                </button>
+                <button class="btn btn-share">
+                  <i class="fas fa-share"></i>
+                  <span>Share</span>
+                </button>
+                <button class="btn btn-save">
+                  <i class="fas fa-bookmark"></i>
+                </button>
+              </div>
+            </article>
+
+            <!-- Post 3 -->
+            <article class="post">
+              <div class="post-header">
+                <div class="post-user">
+                  <img
+                    src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=40&h=40&fit=crop&crop=face"
+                    alt="User"
+                    class="user-avatar-small"
+                  />
+                  <div class="user-info">
+                    <h4>Emma Thompson</h4>
+                    <span class="post-time">1 day ago</span>
+                  </div>
+                </div>
+                <button class="btn btn-more">
+                  <i class="fas fa-ellipsis-h"></i>
+                </button>
+              </div>
+              <div class="post-content">
+                <p class="post-caption">
+                  Working on a new watercolor piece. The colors are flowing
+                  beautifully today! 🎨 #watercolor #art #painting
+                </p>
+                <div class="post-media">
+                  <img
+                    src="https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=600&h=400&fit=crop"
+                    alt="Watercolor Art"
+                  />
+                </div>
+              </div>
+              <div class="post-actions">
+                <button class="btn btn-like">
+                  <i class="fas fa-heart"></i>
+                  <span>2.1k</span>
+                </button>
+                <button class="btn btn-comment">
+                  <i class="fas fa-comment"></i>
+                  <span>134</span>
+                </button>
+                <button class="btn btn-share">
+                  <i class="fas fa-share"></i>
+                  <span>Share</span>
+                </button>
+                <button class="btn btn-save">
+                  <i class="fas fa-bookmark"></i>
+                </button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Search Section (Hidden by default) -->
+      <section class="search-section" id="search-section" style="display: none">
+        <div class="search-container">
+          <div class="search-header">
+            <h2>Discover Creators</h2>
+            <p>Find amazing artists and their work</p>
+          </div>
+          <div class="search-input-container">
+            <i class="fas fa-search"></i>
+            <input
+              type="text"
+              placeholder="Search creators, art styles, or tags..."
+              class="search-input"
+            />
+          </div>
+          <div class="search-results">
+            <h3>Popular Categories</h3>
+            <div class="category-grid">
+              <div class="category-card">
+                <i class="fas fa-paint-brush"></i>
+                <span>Digital Art</span>
+              </div>
+              <div class="category-card">
+                <i class="fas fa-camera"></i>
+                <span>Photography</span>
+              </div>
+              <div class="category-card">
+                <i class="fas fa-music"></i>
+                <span>Music</span>
+              </div>
+              <div class="category-card">
+                <i class="fas fa-pen-fancy"></i>
+                <span>Writing</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Post Creation Section (Hidden by default) -->
+      <section class="post-section" id="post-section" style="display: none">
+        <div class="post-container">
+          <div class="post-header">
+            <h2>Create New Post</h2>
+            <button class="btn btn-close">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+          <div class="post-form">
+            <div class="upload-area">
+              <i class="fas fa-cloud-upload-alt"></i>
+              <p>Drag and drop your media here or click to browse</p>
+              <input type="file" accept="image/*,video/*" class="file-input" />
+            </div>
+            <textarea
+              placeholder="What's on your mind? Share your creative process..."
+              class="post-textarea"
+            ></textarea>
+            <div class="post-options">
+              <button class="btn btn-add-tags">
+                <i class="fas fa-tags"></i>
+                Add Tags
+              </button>
+              <button class="btn btn-location">
+                <i class="fas fa-map-marker-alt"></i>
+                Add Location
+              </button>
+            </div>
+            <button class="btn btn-publish">Publish Post</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Profile Section (Hidden by default) -->
+      <section
+        class="profile-section"
+        id="profile-section"
+        style="display: none"
+      >
+        <div class="profile-container">
+          <div class="profile-header">
+            <div class="profile-avatar">
+              <img
+                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=120&h=120&fit=crop&crop=face"
+                alt="Profile"
+              />
+            </div>
+            <div class="profile-info">
+              <h2>John Doe</h2>
+              <p>Digital Artist & Designer</p>
+              <div class="profile-stats">
+                <div class="stat">
+                  <span class="stat-number">1.2k</span>
+                  <span class="stat-label">Followers</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-number">856</span>
+                  <span class="stat-label">Following</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-number">234</span>
+                  <span class="stat-label">Posts</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="profile-actions">
+            <button class="btn btn-edit-profile">Edit Profile</button>
+            <button class="btn btn-settings">
+              <i class="fas fa-cog"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- macOS Style Bottom Navigation -->
+    <nav class="bottom-nav">
+      <div class="dock-container">
+        <div class="dock-item active" data-section="feed-section">
+          <div class="dock-icon">
+            <i class="fas fa-home"></i>
+          </div>
+          <span class="dock-label">Home</span>
+        </div>
+        <div class="dock-item" data-section="search-section">
+          <div class="dock-icon">
+            <i class="fas fa-search"></i>
+          </div>
+          <span class="dock-label">Search</span>
+        </div>
+        <div class="dock-item" data-section="post-section">
+          <div class="dock-icon">
+            <i class="fas fa-plus"></i>
+          </div>
+          <span class="dock-label">Post</span>
+        </div>
+        <div class="dock-item" data-section="profile-section">
+          <div class="dock-icon">
+            <i class="fas fa-user"></i>
+          </div>
+          <span class="dock-label">Profile</span>
+        </div>
+      </div>
+    </nav>
+
+    <script src="main.js"></script>
+  </body>
+</html>
