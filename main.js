@@ -11,7 +11,7 @@ let currentSection = "feed-section";
 document.addEventListener("DOMContentLoaded", function () {
   // Check if user is logged in
   if (!currentUser) {
-    window.location.href = "home.html";
+    window.location.href = "index.html";
     return;
   }
 
@@ -645,7 +645,7 @@ function viewProfile() {
 
 function logout() {
   localStorage.removeItem("artflow_current_user");
-  window.location.href = "home.html";
+  window.location.href = "index.html";
 }
 
 // Story functions
