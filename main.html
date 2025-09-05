@@ -23,11 +23,13 @@
           <span>ArtFlow</span>
         </div>
         <div class="nav-actions">
-          <button class="btn btn-notification">
+          <button class="btn btn-notification" id="btn-bell">
             <i class="fas fa-bell"></i>
+            <span class="badge" id="badge-bell" style="display: none">0</span>
           </button>
-          <button class="btn btn-messages">
+          <button class="btn btn-messages" id="btn-inbox">
             <i class="fas fa-envelope"></i>
+            <span class="badge" id="badge-inbox" style="display: none">0</span>
           </button>
           <div class="user-avatar">
             <img
@@ -243,6 +245,51 @@
         </div>
       </section>
 
+      <!-- Comments Modal -->
+      <div class="modal-overlay" id="comments-modal" style="display: none">
+        <div class="modal-card">
+          <div class="modal-header">
+            <h3>Comments</h3>
+            <button class="btn btn-close-modal" data-close="comments-modal">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="comments-list" id="comments-list"></div>
+          </div>
+          <div class="modal-footer">
+            <input
+              type="text"
+              class="comment-input"
+              placeholder="Add a comment..."
+            />
+            <button class="btn btn-submit-comment">Post</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Share Modal -->
+      <div class="modal-overlay" id="share-modal" style="display: none">
+        <div class="modal-card">
+          <div class="modal-header">
+            <h3>Share</h3>
+            <button class="btn btn-close-modal" data-close="share-modal">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="share-actions">
+              <button class="btn btn-share-copy">
+                <i class="fas fa-link"></i> Copy link
+              </button>
+              <button class="btn btn-share-native">
+                <i class="fas fa-share"></i> Native share
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- Search Section (Hidden by default) -->
       <section class="search-section" id="search-section" style="display: none">
         <div class="search-container">
@@ -257,6 +304,11 @@
               placeholder="Search creators, art styles, or tags..."
               class="search-input"
             />
+            <div
+              class="search-live-results"
+              id="search-live-results"
+              style="display: none"
+            ></div>
           </div>
           <div class="search-results">
             <h3>Popular Categories</h3>
@@ -277,6 +329,26 @@
                 <i class="fas fa-pen-fancy"></i>
                 <span>Writing</span>
               </div>
+            </div>
+            <div class="search-suggestions">
+              <h3>Suggested Creators</h3>
+              <ul class="creator-list" id="creator-list"></ul>
+            </div>
+
+            <div
+              class="search-category-results"
+              id="category-results"
+              style="display: none"
+            >
+              <div class="category-results-header">
+                <button class="btn btn-back-to-categories" type="button">
+                  <i class="fas fa-arrow-left"></i>
+                  <span>Back</span>
+                </button>
+                <h3 id="category-title"></h3>
+              </div>
+              <div class="ideas-list" id="ideas-list"></div>
+              <div class="posts-grid" id="posts-grid"></div>
             </div>
           </div>
         </div>
@@ -388,6 +460,60 @@
         </div>
       </div>
     </nav>
+
+    <!-- Notifications Panel -->
+    <div class="modal-overlay" id="notifications-modal" style="display: none">
+      <div class="modal-card">
+        <div class="modal-header">
+          <h3>Notifications</h3>
+          <div style="display: flex; gap: 0.5rem; align-items: center">
+            <button class="btn" id="btn-mark-all-read">
+              <i class="fas fa-check"></i> Mark all read
+            </button>
+            <button
+              class="btn btn-close-modal"
+              data-close="notifications-modal"
+            >
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div class="notifications-list" id="notifications-list"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Inbox Panel -->
+    <div class="modal-overlay" id="inbox-modal" style="display: none">
+      <div class="modal-card">
+        <div class="modal-header">
+          <h3>Messages</h3>
+          <button class="btn btn-close-modal" data-close="inbox-modal">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="inbox-container">
+            <div class="threads" id="threads"></div>
+            <div class="thread-view">
+              <div class="messages" id="messages"></div>
+              <div class="composer">
+                <input
+                  type="text"
+                  class="message-input"
+                  id="message-input"
+                  placeholder="Write a message..."
+                />
+                <button class="btn" id="btn-send-message">
+                  <i class="fas fa-paper-plane"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="main.js"></script>
   </body>
